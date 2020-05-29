@@ -8,6 +8,7 @@
   "baseUrl": "http://demo.applitools.com/",
   "env": {
     "APP_NAME": "/gridHackathonV1.html",
-    "VERSION": 1
+    "VERSION": 1,
+    "PRODUCT_DETAILS_URL": "gridHackathonProductDetailsV1.html?id=1"
   }
 }
