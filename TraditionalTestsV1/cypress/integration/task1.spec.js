@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-import { sizes, viewports } from '../support/browser-util';
+import { sizes, viewports } from '../../../utils/device-utils';
 
 const elements = [
   {

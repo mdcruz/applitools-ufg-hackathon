@@ -1,7 +1,7 @@
 {
   "integrationFolder": "TraditionalTestsV1/cypress/integration",
   "fixturesFolder": "TraditionalTestsV1/cypress/fixtures",
-  "pluginsFile": "TraditionalTestsV1/cypress/plugins/index.js",
+  "pluginsFile": false,
   "screenshotsFolder": "TraditionalTestsV1/cypress/screenshots",
   "supportFile": "TraditionalTestsV1/cypress/support/index.js",
   "videosFolder": "TraditionalTestsV1/cypress/videos",
