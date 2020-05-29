@@ -90,6 +90,7 @@ describe(`AppliFashion V${Cypress.env(
 
         cy.get(id).should(assertionString);
 
+        // Bug ID-2
         if (name === 'Shoe Size') {
           cy.get(id).should('have.text', 'Small (S)');
         }

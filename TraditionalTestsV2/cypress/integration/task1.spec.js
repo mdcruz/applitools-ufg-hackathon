@@ -2,11 +2,13 @@
 
 import { sizes, viewports } from '../../../utils/device-utils';
 
+const allViewports = [viewports.DESKTOP, viewports.TABLET, viewports.MOBILE];
+
 const elements = [
   {
     name: 'Search Bar',
     id: '#INPUTtext____42',
-    isDisplayedOn: [viewports.DESKTOP, viewports.TABLET],
+    isDisplayedOn: [...allViewports],
   },
   {
     name: 'Main Menu',
@@ -16,7 +18,7 @@ const elements = [
   {
     name: 'Wishlist Icon',
     id: '#A__wishlist__52',
-    isDisplayedOn: [viewports.DESKTOP],
+    isDisplayedOn: [...allViewports],
   },
   {
     name: 'Product Filter',
@@ -26,31 +28,37 @@ const elements = [
   {
     name: 'Basket Count',
     id: '#A__cartbt__49 strong',
-    isDisplayedOn: [viewports.DESKTOP, viewports.TABLET],
+    isDisplayedOn: [...allViewports],
   },
   {
     name: 'Grid View Tile Icon',
-    id: '#I__tiviewgrid__202',
-    isDisplayedOn: [viewports.DESKTOP],
+    id: '.ti-view-grid',
+    isDisplayedOn: [...allViewports],
   },
   {
     name: 'List View Tile Icon',
-    id: '#A____203',
-    isDisplayedOn: [viewports.DESKTOP],
+    id: '.ti-view-list',
+    isDisplayedOn: [...allViewports],
   },
+
+  // Bug ID-4
   {
     name: 'Teaser Icons',
     id: '#UL____269',
     isDisplayedOn: [viewports.TABLET, viewports.MOBILE],
   },
+
+  // Bug ID-3
   {
     name: 'Filter Funnel Icon',
     id: '#ti-filter',
     isDisplayedOn: [viewports.TABLET, viewports.MOBILE],
   },
+
+  // Bug ID-3
   {
     name: 'Filter Word Button',
-    id: '#SPAN____208',
+    id: '#SPAN____209',
     isDisplayedOn: [viewports.TABLET],
   },
 ];

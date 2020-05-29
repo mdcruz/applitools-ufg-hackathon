@@ -19,6 +19,8 @@ describe(`AppliFashion V${Cypress.env(
 
       cy.get('#colors__Black').click();
       cy.get('#filterBtn').click();
+
+      // Bug ID-1
       cy.get('.grid_item').should('have.length', 2);
     });
   });
