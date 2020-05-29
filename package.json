@@ -1,0 +1,14 @@
+{
+  "name": "applitools-ufg-hackathon",
+  "version": "1.0.0",
+  "description": "Project for showing the traditional tests and modern tests of AppliFashion website",
+  "main": "index.js",
+  "scripts": {
+    "test:traditional:v1:debug": "cypress open --config-file TraditionalTestsV1/cypress.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^4.7.0"
+  }
+}
