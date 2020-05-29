@@ -1,0 +1,14 @@
+{
+  "integrationFolder": "TraditionalTestsV2/cypress/integration",
+  "fixturesFolder": "TraditionalTestsV2/cypress/fixtures",
+  "pluginsFile": false,
+  "screenshotsFolder": "TraditionalTestsV2/cypress/screenshots",
+  "supportFile": "TraditionalTestsV2/cypress/support/index.js",
+  "videosFolder": "TraditionalTestsV2/cypress/videos",
+  "baseUrl": "http://demo.applitools.com/",
+  "env": {
+    "APP_NAME": "/gridHackathonV2.html",
+    "VERSION": 2,
+    "PRODUCT_DETAILS_URL": "gridHackathonProductDetailsV2.html?id=1"
+  }
+}

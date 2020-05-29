@@ -4,7 +4,8 @@
   "description": "Project for showing the traditional tests and modern tests of AppliFashion website",
   "main": "index.js",
   "scripts": {
-    "test:traditional:v1:debug": "cypress open --config-file TraditionalTestsV1/cypress.json"
+    "test:traditional:v1:debug": "cypress open --config-file TraditionalTestsV1/cypress.json",
+    "test:traditional:v2:debug": "cypress open --config-file TraditionalTestsV2/cypress.json"
   },
   "author": "",
   "license": "ISC",
