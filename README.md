@@ -2,11 +2,48 @@
 
 My submission on the Applitools Ultrafast Grid Hackathon.
 
+## Dependencies
+
+- Node (12.16.1) and NPM (6.13.4)
+- Chrome 83
+- Firefox 76
+
 ## Technology used
 
-- Cypress for writing the traditional tests
-- Mochawesome for the test reports for the traditional tests
-- Applitools for the modern tests
+- Cypress (4.7.0) for writing the traditional tests
+- Mochawesome (6.1.1) for generating the test reports for the traditional tests
+
+## Getting started
+
+To get started, please do the following:
+
+1. Clone this github repo locally
+
+2. `cd applitools-ufg-hackathon` if you are not on this directory
+
+3. `npm i` to install the project dependencies
+
+4. `sh scripts/run-traditional-tests-v1.sh` to run the V1 tests
+
+5. `sh scripts/run-traditional-tests-v2.sh` to run the V1 tests
+
+When the above test scripts are run, this will generate a report at the end that you can click from your terminal. These reports are also saved to the `Reports` folder.
+
+If you just want to view the existing reports without running the tests, please open the following report:
+
+[Traditional Test V1 report](Reports/TraditionalTestsV1/traditional-tests-report.html)
+
+[Traditional Test V2 report](Reports/TraditionalTestsV2/traditional-tests-report.html)
+
+## Time spent on writing Traditional Tests (V1 and V2)
+
+In total, I spent around 5.5 hours (on and off because I was getting distracted by the little one) writing the tests for both V1 and V2 with respective breakdown added below. This didn't include exploring the app which I time boxed around 30 mins.
+
+- Installing Cypress: 5 mins
+- Writing tests for V1: 2 hours
+- Test maintenance for V2 and finding bugs: 1 hour
+- Test reporting and project refactoring: 2 hours
+- Documentation: 30 mins
 
 ## Bugs found on Traditional Tests V2
 
@@ -41,6 +78,14 @@ function shouldBeVisible(task, testName, domId) {
 }
 ```
 
-Instead, I integrated with mochaawesome to display the results in an html file instead which you can see an example below.
+Instead, I integrated with mochawesome to display the results in an html file instead which you can see an example below.
 
 ![image](images/example-report-screenshot.png)
+
+Here is a screenshot below that you can filter only the failed tests with mochawesome report.
+
+![image](images/example-report-only-errors.png)
+
+## Things I wished to improve
+
+- Use Cypress Docker images and Docker-Compose to run tests in parallel. I deliberately didn't used Docker to try to run tests in parallel because I wanted to show the limitation of doing cross browser testing locally. I could have run a subset of tests only on Firefox but I wanted to make sure that I caught all possible visual bugs I can find. The disadvantage with this approach is that tests are much slower to run (Traditional tests V1 on average took 2mins and on V2 took 3 mins).

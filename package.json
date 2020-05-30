@@ -4,9 +4,9 @@
   "description": "Project for showing the traditional tests and modern tests of AppliFashion website",
   "main": "index.js",
   "scripts": {
-    "debug:test:traditional": "cypress open --config-file $CYPRESS_CONFIG",
-    "run:test:traditional": "cypress run --config-file $CYPRESS_CONFIG --browser $CYPRESS_BROWSER --headless",
-    "test:traditional": "npm run clean:reports; npm run run:test:traditional; npm run merge:reports; npm run generate:html:report",
+    "debug:test:traditional:v1": "cypress open --config-file TraditionalTestsV1/cypress.json",
+    "debug:test:traditional:v2": "cypress open --config-file TraditionalTestsV2/cypress.json",
+    "test:traditional": "cypress run --config-file $CYPRESS_CONFIG --browser $CYPRESS_BROWSER --headless",
     "clean:reports": "rm -rf mochawesome-report/",
     "merge:reports": "mochawesome-merge mochawesome-report/*.json > traditional-tests-report.json",
     "generate:html:report": "marge --reportDir $REPORTS_DIR traditional-tests-report.json"
