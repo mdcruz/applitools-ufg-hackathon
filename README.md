@@ -32,7 +32,9 @@ When the above test scripts are run, this will generate a report at the end that
 
 If you just want to view the existing reports without running the tests, please navigate to `Reports > TraditionalTestsV1` or `Reports > TraditionalTestsV2` and open the html report in your browser of choice.
 
-6. To Run the Applitools test, please export your `APPLITOOLS_API_KEY` and then simply run `npm run test:modern`
+6. To Run the Applitools test, please export your `APPLITOOLS_API_KEY` and then simply run `npm run test:modern`.
+
+<b>Note</b>: I slightly modified the project structure for the Modern Tests. Rather than having `ModernTestsV1` and `ModernTestsV2`, I only have one folder called `ModernTests` and use different Cypress config files to run the same tests on different URLs. Since the test maintenance and reporting is done on Applitools Dashboard directly, there is no benefit creating two folders because the contents are similar.
 
 ## Known Limitations
 
@@ -57,10 +59,13 @@ In total, I spent around 5.5 hours (on and off because I was getting distracted 
 
 ## Time spent on writing Modern Tests using Applitools (V1 and V2)
 
+In total, I spent around just over one hour writing the tests for both V1 and V2 when using Applitools. Because there were bugs that I missed on V1, I spent some time marking these bugs in Applitools using the bug region feature.
+
 - Install Applitools Cypress SDK: 2 mins
 - Setup project structure with Cypress and Applitools: 10 mins
 - Writing tests for V1: 20 mins
-- Test maintenance for V2 and reporting bugs:
+- Running tests for V2: 5 mins
+- Bug reporting with Applitools: 25 mins
 - Documentation: 10 mins
 
 ## Bugs found on Traditional Tests V2
@@ -107,3 +112,5 @@ Here is a screenshot below that you can filter only the failed tests with mochaw
 ## Things I wished to improve
 
 - Use Cypress Docker images and Docker-Compose to run tests in parallel. I deliberately didn't used Docker to try to run tests in parallel because I wanted to show the limitation of doing cross browser testing locally. I could have run a subset of tests only on Firefox but I wanted to make sure that I caught all possible visual bugs I can find. The disadvantage with this approach is that tests are much slower to run (Traditional tests V1 on average took 2mins and on V2 took 3 mins).
+
+- Only have 1 folder for TraditionalTests since most of the contents between `TraditionalTestsV1` and `TraditionalTestsV2` are mostly similar apart from a couple of tests that I updated.
