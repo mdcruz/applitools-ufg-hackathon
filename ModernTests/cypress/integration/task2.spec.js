@@ -13,7 +13,7 @@ describe(`AppliFashion V${Cypress.env(
     cy.get('.ti-filter').click();
     cy.get('#colors__Black').click();
     cy.get('#filterBtn').click();
-    cy.eyesCheckWindow();
+    cy.eyesCheckWindow({ selector: '#product_grid' });
     cy.eyesClose();
   });
 });

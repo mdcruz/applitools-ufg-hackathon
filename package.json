@@ -7,7 +7,8 @@
     "debug:test:traditional:v1": "cypress open --config-file TraditionalTestsV1/cypress.json",
     "debug:test:traditional:v2": "cypress open --config-file TraditionalTestsV2/cypress.json",
     "test:traditional": "cypress run --config-file $CYPRESS_CONFIG --browser $CYPRESS_BROWSER --headless",
-    "test:modern": "cd ModernTestsV1; cypress run",
+    "test:modern:v1": "cd ModernTests; cypress run --config-file cypress.v1.json",
+    "test:modern:v2": "cd ModernTests; cypress run --config-file cypress.v2.json",
     "clean:reports": "rm -rf mochawesome-report/",
     "merge:reports": "mochawesome-merge mochawesome-report/*.json > traditional-tests-report.json",
     "generate:html:report": "marge --reportDir $REPORTS_DIR traditional-tests-report.json"
