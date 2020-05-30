@@ -12,6 +12,7 @@ My submission on the Applitools Ultrafast Grid Hackathon.
 
 - Cypress (4.7.0) for writing the traditional tests
 - Mochawesome (6.1.1) for generating the test reports for the traditional tests
+- Applitools Eyes for Cypress (3.11.1) for writing the modern tests
 
 ## Getting started
 
@@ -30,6 +31,8 @@ To get started, please do the following:
 When the above test scripts are run, this will generate a report at the end that you can click from your terminal. These reports are also saved to the `Reports` folder.
 
 If you just want to view the existing reports without running the tests, please navigate to `Reports > TraditionalTestsV1` or `Reports > TraditionalTestsV2` and open the html report in your browser of choice.
+
+6. To Run the Applitools test, please export your `APPLITOOLS_API_KEY` and then simply run `npm run test:modern`
 
 ## Known Limitations
 
@@ -51,6 +54,14 @@ In total, I spent around 5.5 hours (on and off because I was getting distracted 
 - Test maintenance for V2 and finding bugs: 1 hour
 - Test reporting and project refactoring: 2 hours
 - Documentation: 30 mins
+
+## Time spent on writing Modern Tests using Applitools (V1 and V2)
+
+- Install Applitools Cypress SDK: 2 mins
+- Setup project structure with Cypress and Applitools: 10 mins
+- Writing tests for V1: 20 mins
+- Test maintenance for V2 and reporting bugs:
+- Documentation: 10 mins
 
 ## Bugs found on Traditional Tests V2
 

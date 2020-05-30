@@ -1,0 +1,9 @@
+{
+  "baseUrl": "http://demo.applitools.com/",
+  "fixturesFolder": false,
+  "env": {
+    "APP_NAME": "/gridHackathonV1.html",
+    "VERSION": 1,
+    "PRODUCT_DETAILS_URL": "gridHackathonProductDetailsV1.html?id=1"
+  }
+}

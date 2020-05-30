@@ -1,6 +1,6 @@
 {
   "integrationFolder": "TraditionalTestsV1/cypress/integration",
-  "fixturesFolder": "TraditionalTestsV1/cypress/fixtures",
+  "fixturesFolder": false,
   "pluginsFile": false,
   "reporter": "../node_modules/mochawesome/src/mochawesome.js",
   "reporterOptions": {
