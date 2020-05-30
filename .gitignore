@@ -3,3 +3,4 @@ mochawesome-report
 **/cypress/videos
 **/cypress/screenshots
 .DS_Store
+traditional-tests-report.json
