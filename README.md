@@ -31,6 +31,17 @@ When the above test scripts are run, this will generate a report at the end that
 
 If you just want to view the existing reports without running the tests, please navigate to `Reports > TraditionalTestsV1` or `Reports > TraditionalTestsV2` and open the html report in your browser of choice.
 
+## Known Limitations
+
+Cypress doesn't currently integrate with third party cloud based solutions such as SauceLabs or BrowserStack. So for the cross browser testing, I decided to run the tests on the following:
+
+- Chrome browser (mobile size - iphone-x dimensions)
+- Chrome browser (tablet size - ipad-2 dimensions)
+- Chrome browser (laptop size - macbook-13 dimensions)
+- Firefox browser (mobile size - iphone-x dimensions)
+- Firefox browser (tablet size - ipad-2 dimensions)
+- Firefox browser (laptop size - macbook-13 dimensions)
+
 ## Time spent on writing Traditional Tests (V1 and V2)
 
 In total, I spent around 5.5 hours (on and off because I was getting distracted by the little one) writing the tests for both V1 and V2 with respective breakdown added below. This didn't include exploring the app which I time boxed around 30 mins.
