@@ -29,11 +29,7 @@ To get started, please do the following:
 
 When the above test scripts are run, this will generate a report at the end that you can click from your terminal. These reports are also saved to the `Reports` folder.
 
-If you just want to view the existing reports without running the tests, please open the following report:
-
-[Traditional Test V1 report](Reports/TraditionalTestsV1/traditional-tests-report.html)
-
-[Traditional Test V2 report](Reports/TraditionalTestsV2/traditional-tests-report.html)
+If you just want to view the existing reports without running the tests, please navigate to `Reports > TraditionalTestsV1` or `Reports > TraditionalTestsV2` and open the html report in your browser of choice.
 
 ## Time spent on writing Traditional Tests (V1 and V2)
 
