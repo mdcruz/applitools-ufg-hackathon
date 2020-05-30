@@ -2,6 +2,12 @@
   "integrationFolder": "TraditionalTestsV1/cypress/integration",
   "fixturesFolder": "TraditionalTestsV1/cypress/fixtures",
   "pluginsFile": false,
+  "reporter": "../node_modules/mochawesome/src/mochawesome.js",
+  "reporterOptions": {
+    "overwrite": false,
+    "html": false,
+    "json": true
+  },
   "screenshotsFolder": "TraditionalTestsV1/cypress/screenshots",
   "supportFile": "TraditionalTestsV1/cypress/support/index.js",
   "videosFolder": "TraditionalTestsV1/cypress/videos",
