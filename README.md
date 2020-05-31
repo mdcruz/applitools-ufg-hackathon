@@ -1,6 +1,6 @@
 # Applitools Ultrafast Grid Hackathon (Marie Drake)
 
-My submission on the Applitools Ultrafast Grid Hackathon.
+My submission for the Applitools Ultrafast Grid Hackathon.
 
 ## Dependencies
 
